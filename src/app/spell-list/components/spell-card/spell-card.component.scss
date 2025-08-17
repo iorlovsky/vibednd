@@ -1,0 +1,73 @@
+:host {
+  border: 9px solid var(--dnd-card-border-color);
+  border-bottom-width: 1px;
+  background-color: var(--dnd-card-background-color);
+  border-radius: 8px;
+  display: block;
+  height: min-content;
+}
+
+.spell-card__name {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.spell-card__row {
+  display: flex;
+  border-bottom: 2px solid var(--dnd-card-border-color);
+}
+
+.spell-card__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 4px;
+
+  &:first-child:not(:last-child) {
+    border-right: 2px solid var(--dnd-card-border-color);
+  }
+}
+
+.spell-card__label {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--dnd-card-text-secondary-color);
+}
+
+.spell-card__value {
+  font-size: 0.875rem;
+}
+
+.spell-card__materials {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.spell-card__text {
+  max-height: 120px;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  padding-right: 4px;
+  word-break: break-all;
+}
+
+.spell-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  background-color: var(--dnd-card-border-color);
+  justify-content: flex-end;
+}
+
+.spell-card__tag {
+  color: var(--dnd-card-text-secondary-color);
+  font-size: 0.75rem;
+  font-weight: 600;
+}

@@ -1,0 +1,30 @@
+@use "mixins";
+
+.spell-list-page__layout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 16px;
+}
+
+.spell-list-page__column {
+  flex: 1 1 0;
+}
+
+.spell-list-page__column--primary {
+  border-right: 1px solid var(--p-zinc-400);
+}
+
+@include mixins.media-bp-down(sm) {
+  .spell-list-page__layout {
+    flex-direction: column;
+  }
+
+  .spell-list-page__column--primary {
+    border-right: none;
+  }
+
+  .spell-list-page__column--secondary {
+    order: -1;
+  }
+}

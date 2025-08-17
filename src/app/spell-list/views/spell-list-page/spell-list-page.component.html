@@ -1,0 +1,29 @@
+<div class="spell-list-page__layout">
+  <div class="spell-list-page__column spell-list-page__column--primary">
+    <h2>Spell collection</h2>
+
+    @if (allSpells.length) {
+      <dnd-spell-list
+        [spells]="allSpells"
+        language="en"
+        (spellClick)="onAddSpell($event)"
+      />
+    } @else {
+      No spells available
+    }
+
+  </div>
+  <div class="spell-list-page__column spell-list-page__column--secondary">
+    <h2>My spells</h2>
+
+    @if (selectedSpells().length) {
+      <dnd-spell-list
+        [spells]="selectedSpells()"
+        language="en"
+        (spellClick)="onRemoveSpell($event)"
+      />
+    } @else {
+      No spells added yet
+    }
+  </div>
+</div>

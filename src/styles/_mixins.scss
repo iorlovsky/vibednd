@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin media-bp-down($bp) {
+  $breakpoint: null;
+  @if $bp == xs {
+    $breakpoint: $breakpoint-xs;
+  } @else if $bp == sm {
+    $breakpoint: $breakpoint-sm;
+  } @else if $bp == md {
+    $breakpoint: $breakpoint-md;
+  } @else if $bp == lg {
+    $breakpoint: $breakpoint-lg;
+  } @else if $bp == xl {
+    $breakpoint: $breakpoint-xl;
+  }
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

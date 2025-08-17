@@ -1,0 +1,21 @@
+<header class="app-header">
+  <h1 class="app-header__title">Vibe DnD</h1>
+
+  <div class="app-header__column--left">
+    <div>
+      <p-menu
+        #menu
+        [model]="themeMenuItems" [popup]="true"
+      >
+
+      </p-menu>
+      <p-button
+        (click)="menu.toggle($event)"
+        icon="pi pi-sun"
+        severity="secondary"
+        variant="outlined"
+        type="button"
+      />
+    </div>
+  </div>
+</header>
