@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:gh-pages": "ng build --configuration production --base-href \"https://iorlovsky.github.io/vibednd/\"",
     "watch": "ng build --watch --configuration development",
     "test:unit": "ng test --browsers ChromeHeadlessCI --watch=false",
     "lint": "ng lint && npm lint:circular-deps",

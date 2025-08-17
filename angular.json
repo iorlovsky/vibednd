@@ -19,7 +19,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": {
-              "base": "./dist",
+              "base": "dist/vibednd",
               "browser": ""
             },
             "index": "src/index.html",
