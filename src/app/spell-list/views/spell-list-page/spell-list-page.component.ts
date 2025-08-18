@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit, signal } from '@angular/core'
 import { Store } from '@ngrx/store'
 import { DndLocales } from '@core/models'
-import { Spell } from '../../models'
-import { LanguageSwitchComponent, SpellListComponent } from '../../components'
+import { Spell, SpellListFiltersModel } from '../../models'
+import { LanguageSwitchComponent, SpellListComponent, SpellListControlsComponent } from '../../components'
 import { SpellListActions, SpellListSelectors } from '../../store'
 
 @Component({
@@ -10,6 +10,7 @@ import { SpellListActions, SpellListSelectors } from '../../store'
   imports: [
     SpellListComponent,
     LanguageSwitchComponent,
+    SpellListControlsComponent,
   ],
   templateUrl: './spell-list-page.component.html',
   styleUrl: './spell-list-page.component.scss',
@@ -20,11 +21,13 @@ export class SpellListPageComponent implements OnInit, OnDestroy {
 
   readonly spellList = this.store$.selectSignal(SpellListSelectors.selectSpellList)
   readonly selectedSpells = this.store$.selectSignal(SpellListSelectors.selectSelectedSpells)
+  readonly filterValues = this.store$.selectSignal(SpellListSelectors.selectFilterValues)
+
   readonly currentLanguage = signal<DndLocales>(DndLocales.EN)
 
   ngOnInit(): void {
     this.store$.dispatch(SpellListActions.spellListInit())
-    this.store$.dispatch(SpellListActions.fetchSpellList())
+    this.store$.dispatch(SpellListActions.fetchSpellList({ useCache: false }))
   }
 
   ngOnDestroy(): void {
@@ -41,5 +44,9 @@ export class SpellListPageComponent implements OnInit, OnDestroy {
 
   onLanguageChange(language: DndLocales): void {
     this.currentLanguage.set(language)
+  }
+
+  updateFilterValues(filterValues: Partial<SpellListFiltersModel>): void {
+    this.store$.dispatch(SpellListActions.updateFilterValues({ filterValues }))
   }
 }

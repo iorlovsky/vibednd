@@ -1,5 +1,11 @@
 <div class="spell-list-page__layout">
   <div class="spell-list-page__column spell-list-page__column--primary">
+    <dnd-spell-list-controls
+      class="spell-list-page__controls"
+      [filterValues]="filterValues()"
+      (updateFilterValues)="updateFilterValues($event)"
+    />
+
     @if (spellList().length) {
       <dnd-spell-list
         [spells]="spellList()"
@@ -9,7 +15,6 @@
     } @else {
       No spells available
     }
-
   </div>
   <div class="spell-list-page__column spell-list-page__column--secondary">
     <div class="spell-list-page__header">

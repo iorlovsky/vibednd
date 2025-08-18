@@ -5,6 +5,10 @@
   flex-direction: row;
   width: 100%;
   gap: 16px;
+
+  @include mixins.media-bp-down(sm) {
+    flex-direction: column;
+  }
 }
 
 .spell-list-page__column {
@@ -13,6 +17,18 @@
 
 .spell-list-page__column--primary {
   border-right: 1px solid var(--p-zinc-400);
+  padding-right: 16px;
+
+  @include mixins.media-bp-down(sm) {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+.spell-list-page__column--secondary {
+  @include mixins.media-bp-down(sm) {
+    order: -1;
+  }
 }
 
 .spell-list-page__header {
@@ -26,16 +42,10 @@
   }
 }
 
-@include mixins.media-bp-down(sm) {
-  .spell-list-page__layout {
-    flex-direction: column;
-  }
-
-  .spell-list-page__column--primary {
-    border-right: none;
-  }
-
-  .spell-list-page__column--secondary {
-    order: -1;
-  }
+.spell-list-page__controls {
+  margin-bottom: 16px;
+  width: 100%;
 }
+
+
+

@@ -30,7 +30,6 @@ export class SpellListEffects {
   fetchSpellListOnFilterValuesChange$ = createEffect(() => this.actions$.pipe(
     ofType(
       SpellListActions.updateFilterValues,
-      SpellListActions.clearFilter,
       SpellListActions.resetFilters,
     ),
     switchMap(() => this.store$.select(SpellListSelectors.selectFilterValuesDto)
@@ -38,15 +37,18 @@ export class SpellListEffects {
     ),
     distinctUntilChanged(_.isEqual),
     skip(1),
-    map(() => SpellListActions.fetchSpellList()),
+    map(() => SpellListActions.fetchSpellList({ useCache: true })),
   ))
 
   fetchSpellList$ = createEffect(() => this.actions$.pipe(
     ofType(SpellListActions.fetchSpellList),
-    debounceMap(() => this.store$.pipe(
+    debounceMap((_, __, buffer) => this.store$.pipe(
       select(SpellListSelectors.selectSearchParams),
       take(1),
-      switchMap(searchParams => this.spellService.search(searchParams)),
+      switchMap(searchParams => this.spellService.search(
+        searchParams,
+        buffer.every(action => action.useCache),
+      )),
       map(data => SpellListActions.fetchSpellListSuccess({ data })),
       catchError(() => {
         this.toastService.add({

@@ -1,5 +1,5 @@
 import { createActionGroup, emptyProps, props } from '@ngrx/store'
-import { Spell, SpellListFilters, SpellListFiltersModel } from '../../models'
+import { Spell, SpellListFiltersModel } from '../../models'
 
 export const SpellListActions = createActionGroup({
   source: 'Spells/Spell list',
@@ -7,7 +7,7 @@ export const SpellListActions = createActionGroup({
     spellListInit: emptyProps(),
     spellListReset: emptyProps(),
 
-    fetchSpellList: emptyProps(),
+    fetchSpellList: props<{ useCache: boolean }>(),
     fetchSpellListSuccess: props<{ data: Spell[] }>(),
     fetchSpellListFail: emptyProps(),
 
@@ -15,7 +15,6 @@ export const SpellListActions = createActionGroup({
     removeSelectedSpell: props<{ spell: Spell }>(),
 
     updateFilterValues: props<{ filterValues: Partial<SpellListFiltersModel> }>(),
-    clearFilter: props<{ filterId: SpellListFilters }>(),
     resetFilters: emptyProps(),
   },
 })

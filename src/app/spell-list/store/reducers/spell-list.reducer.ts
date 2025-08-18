@@ -53,13 +53,6 @@ export const spellListReducer = createReducer(
     }),
   ),
   on(
-    SpellListActions.clearFilter,
-    (state, { filterId }): SpellListState => ({
-      ...state,
-      filterValues: _.omit(state.filterValues, filterId),
-    }),
-  ),
-  on(
     SpellListActions.resetFilters,
     (state): SpellListState => ({
       ...state,
