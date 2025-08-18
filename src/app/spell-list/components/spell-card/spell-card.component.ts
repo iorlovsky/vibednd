@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, computed, input, Signal } from '@angular/core'
+import { DndLocales } from '@core/models'
 import { Spell } from '../../models'
 
 @Component({
@@ -10,6 +11,7 @@ import { Spell } from '../../models'
 })
 export class SpellCardComponent {
   readonly spell = input.required<Spell>()
+  readonly language = input.required<DndLocales>()
 
   readonly hasLevel: Signal<boolean> = computed(() => {
     return !!this.spell().level && this.spell().level !== '0'

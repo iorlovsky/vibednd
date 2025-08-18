@@ -2,10 +2,10 @@
   @for (spell of spells(); track spell.name.en) {
     <dnd-spell-card
       [spell]="spell"
+      [language]="language()"
       class="spell-list__card"
       role="button"
       (click)="spellClick.emit(spell)"
     />
   }
 </section>
-

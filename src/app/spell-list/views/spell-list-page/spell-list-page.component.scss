@@ -15,6 +15,17 @@
   border-right: 1px solid var(--p-zinc-400);
 }
 
+.spell-list-page__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  h2 {
+    margin: 0;
+  }
+}
+
 @include mixins.media-bp-down(sm) {
   .spell-list-page__layout {
     flex-direction: column;

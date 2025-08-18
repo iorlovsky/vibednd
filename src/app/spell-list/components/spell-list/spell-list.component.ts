@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core'
+import { DndLocales } from '@core/models'
 import { Spell } from '../../models'
 import { SpellCardComponent } from '../spell-card/spell-card.component'
 
@@ -13,8 +14,7 @@ import { SpellCardComponent } from '../spell-card/spell-card.component'
 })
 export class SpellListComponent {
   readonly spells = input<Spell[]>()
-  readonly language = input.required<'en' | 'ru'>()
+  readonly language = input.required<DndLocales>()
 
   readonly spellClick = output<Spell>()
 }
-

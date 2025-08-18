@@ -1,6 +1,6 @@
 <div class="spell-card__row">
   <div class="spell-card__col">
-    <h3 class="spell-card__name">{{ spell().name.en }}</h3>
+    <h3 class="spell-card__name">{{ spell().name[language()] }}</h3>
   </div>
 </div>
 
@@ -40,7 +40,7 @@
 <div class="spell-card__row">
   <div class="spell-card__col">
     <div class="spell-card__text">
-      {{ spell().text.en }}
+      {{ spell().text[language()] }}
     </div>
   </div>
 </div>
