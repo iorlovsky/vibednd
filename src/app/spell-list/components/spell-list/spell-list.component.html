@@ -1,5 +1,5 @@
 <section class="spell-list">
-  @for (spell of spells(); track spell.name) {
+  @for (spell of spells(); track spell.name.en) {
     <dnd-spell-card
       [spell]="spell"
       class="spell-list__card"

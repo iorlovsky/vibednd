@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core'
 import { Store } from '@ngrx/store'
-import { SPELL_COLLECTION } from '../../constants'
+import SPELL_COLLECTION_JSON from '../../constants/spell-collection.json'
 import { Spell } from '../../models'
 import { SpellListComponent } from '../../components'
 import { SpellListActions, SpellListSelectors } from '../../store'
@@ -18,9 +18,7 @@ export class SpellListPageComponent {
   private readonly store$ = inject(Store)
 
   readonly selectedSpells = this.store$.selectSignal(SpellListSelectors.selectSelectedSpells)
-  readonly allSpells: Spell[] = SPELL_COLLECTION.map((spellLocalized) => {
-    return spellLocalized['en']
-  })
+  readonly allSpells: Spell[] = this.getAllSpells()
 
   onAddSpell(spell: Spell): void {
     this.store$.dispatch(SpellListActions.addSelectedSpell({ spell }))
@@ -28,5 +26,9 @@ export class SpellListPageComponent {
 
   onRemoveSpell(spell: Spell): void {
     this.store$.dispatch(SpellListActions.removeSelectedSpell({ spell }))
+  }
+
+  private getAllSpells(): Spell[] {
+    return SPELL_COLLECTION_JSON as Spell[]
   }
 }

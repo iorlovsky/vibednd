@@ -1,7 +1,9 @@
+import { DndTranslatable } from '@core/models'
+
 export interface Spell {
-  name: string;
+  name: DndTranslatable;
   level?: string | number;
-  text: string;
+  text: DndTranslatable;
   school?: string;
   castingTime: string;
   range: string;
