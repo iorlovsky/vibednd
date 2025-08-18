@@ -7,10 +7,11 @@ import { StateFeatures } from '@core/models'
 import { coreFeatureReducers } from '@core/store/reducers'
 import { provideEffects } from '@ngrx/effects'
 import { CoreUiEffects } from '@core/store/effects'
-import { routes } from './app.routes'
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'
 import { providePrimeNG } from 'primeng/config'
+import { MessageService } from 'primeng/api'
 import { dndPrimeNgTheme } from './primeng-theme'
+import { routes } from './app.routes'
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -34,5 +35,6 @@ export const appConfig: ApplicationConfig = {
         },
       },
     }),
+    MessageService,
   ],
 }

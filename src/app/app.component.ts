@@ -2,13 +2,14 @@ import { ChangeDetectionStrategy, Component, DOCUMENT, inject, signal } from '@a
 import { AppHeaderComponent } from '@core/components'
 import { RouterOutlet } from '@angular/router'
 import { ThemeMode } from '@core/models'
+import { Toast } from 'primeng/toast'
 
 @Component({
   selector: 'dnd-root',
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [AppHeaderComponent, RouterOutlet],
+  imports: [AppHeaderComponent, RouterOutlet, Toast],
 })
 export class AppComponent {
   readonly document = inject(DOCUMENT)
