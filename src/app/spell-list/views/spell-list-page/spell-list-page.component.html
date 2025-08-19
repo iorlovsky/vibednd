@@ -4,6 +4,7 @@
       class="spell-list-page__controls"
       [filterValues]="filterValues()"
       (updateFilterValues)="updateFilterValues($event)"
+      (resetFilters)="resetFilters()"
     />
 
     @if (spellList().length) {

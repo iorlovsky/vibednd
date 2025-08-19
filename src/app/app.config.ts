@@ -10,6 +10,7 @@ import { CoreUiEffects } from '@core/store/effects'
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'
 import { providePrimeNG } from 'primeng/config'
 import { MessageService } from 'primeng/api'
+import { DialogService } from 'primeng/dynamicdialog'
 import { dndPrimeNgTheme } from './primeng-theme'
 import { routes } from './app.routes'
 
@@ -36,5 +37,6 @@ export const appConfig: ApplicationConfig = {
       },
     }),
     MessageService,
+    DialogService,
   ],
 }

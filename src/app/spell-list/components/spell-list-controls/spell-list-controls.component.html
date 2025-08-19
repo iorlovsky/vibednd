@@ -1,13 +1,20 @@
 <form
   class="spell-list-controls__form"
-  [formGroup]="searchForm"
+  [formGroup]="filtersForm"
 >
+  <p-button
+    icon="pi pi-filter-fill"
+    aria-label="Filter"
+    severity="secondary"
+    (onClick)="openFiltersDialog()"
+  />
+
   <p-floatlabel
     variant="in"
     class="spell-list-controls__search-wrapper"
   >
     <input
-      [formControl]="searchForm.controls.search"
+      [formControl]="filtersForm.controls.search"
       pInputText
       fluid
       variant="filled"

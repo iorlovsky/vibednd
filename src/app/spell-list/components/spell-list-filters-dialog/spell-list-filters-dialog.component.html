@@ -1,0 +1,20 @@
+<form
+  [formGroup]="form()"
+>
+  <h3>Levels</h3>
+
+  <p-select-button
+    [formControl]="form().controls.level"
+    [options]="levelOptions"
+    class="spell-list-filters-dialog__level-select"
+  />
+</form>
+
+<div class="spell-list-filters-dialog-footer">
+  <p-button
+    icon="pi pi-times"
+    severity="secondary"
+    label="Clear filters"
+    (onClick)="clearFilters.emit()"
+  />
+</div>

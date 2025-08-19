@@ -49,4 +49,8 @@ export class SpellListPageComponent implements OnInit, OnDestroy {
   updateFilterValues(filterValues: Partial<SpellListFiltersModel>): void {
     this.store$.dispatch(SpellListActions.updateFilterValues({ filterValues }))
   }
+
+  resetFilters(): void {
+    this.store$.dispatch(SpellListActions.resetFilters())
+  }
 }

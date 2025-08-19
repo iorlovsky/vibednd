@@ -17,6 +17,14 @@ export class SpellService {
         spell.name.ru,
       ].some(source => source?.toLowerCase().includes(searchModel.toLowerCase()))
     },
+    [SpellListFilters.LEVEL]: (spell: Spell, searchModel: number | null) => {
+      if (searchModel === null) {
+        return true
+      }
+
+      const spellLevel = spell.level ?? 0
+      return parseInt(spellLevel as string, 10) === searchModel
+    },
   }
 
   search(params: SpellListSearchParams, useCache = false): Observable<Spell[]> {
@@ -33,7 +41,7 @@ export class SpellService {
     const filterFn = Object.keys(params).some(key => this.filterMap[key as SpellListFilters])
       ? (item: Spell): boolean => Object.entries(params)
         .filter(([key]) => !!this.filterMap[key as SpellListFilters])
-        .every(([key, params]) => this.filterMap[key as SpellListFilters](item, params as any))
+        .every(([key, params]) => (this.filterMap[key as SpellListFilters] as any)(item, params))
       : null
 
     return this.spellListCache.pipe(
