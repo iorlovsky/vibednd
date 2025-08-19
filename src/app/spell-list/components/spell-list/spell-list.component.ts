@@ -34,7 +34,7 @@ export class SpellListComponent {
       let levelKey: string
 
       if (!spell.level || spell.level === 0 || spell.level === '0') {
-        levelKey = 'Ritual'
+        levelKey = 'Cantrips'
       } else {
         levelKey = `Level ${spell.level}`
       }
