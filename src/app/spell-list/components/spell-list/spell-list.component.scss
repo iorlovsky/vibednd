@@ -1,4 +1,14 @@
 .spell-list {
+  width: 100%;
+}
+
+.spell-list__level-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+.spell-list__cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;

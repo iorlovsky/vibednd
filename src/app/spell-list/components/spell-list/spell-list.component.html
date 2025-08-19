@@ -1,11 +1,28 @@
 <section class="spell-list">
-  @for (spell of spells(); track spell.name.en) {
-    <dnd-spell-card
-      [spell]="spell"
-      [language]="language()"
-      class="spell-list__card"
-      role="button"
-      (click)="spellClick.emit(spell)"
-    />
-  }
+  <p-accordion
+    [multiple]="true"
+  >
+    @for (levelGroup of spellsByLevel(); track levelGroup.level) {
+      <p-accordion-panel [value]="levelGroup.level">
+        <p-accordion-header>
+          <span class="spell-list__level-title">
+            {{ levelGroup.level }} ({{ levelGroup.spells.length }})
+          </span>
+        </p-accordion-header>
+        <p-accordion-content>
+          <div class="spell-list__cards">
+            @for (spell of levelGroup.spells; track spell.name.en) {
+              <dnd-spell-card
+                [spell]="spell"
+                [language]="language()"
+                class="spell-list__card"
+                role="button"
+                (click)="spellClick.emit(spell)"
+              />
+            }
+          </div>
+        </p-accordion-content>
+      </p-accordion-panel>
+    }
+  </p-accordion>
 </section>
