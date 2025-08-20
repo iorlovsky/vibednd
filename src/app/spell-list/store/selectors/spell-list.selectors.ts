@@ -4,7 +4,7 @@ import { SpellsFeatureState } from '../reducers'
 import { SpellListState } from '../state'
 import { Spell, SpellListFiltersModel, SpellListFiltersModelDto, SpellListSearchParams } from '../../models'
 import { ListFiltersUtils } from '../../../shared/utils'
-import { LoadingStatus } from '../../../shared/models'
+import { DndListSort, LoadingStatus } from '../../../shared/models'
 
 export namespace SpellListSelectors {
   type Fn<T> = MemoizedSelector<any, T>
@@ -49,9 +49,21 @@ export namespace SpellListSelectors {
     filterValues => ListFiltersUtils.pickPopulatedFilters(filterValues),
   )
 
-  // Leaving space for pagination, sort and so on.
+  export const selectSort: Fn<DndListSort<keyof Spell>> = createSelector(
+    selectSpellListState,
+    state => state.sort,
+  )
+
   export const selectSearchParams: Fn<SpellListSearchParams> = createSelector(
     selectFilterValuesDto,
-    filterValuesDto => filterValuesDto,
+    selectSort,
+    selectLocale,
+    (filterValuesDto, sort, locale) => ({
+      filters: filterValuesDto,
+      sort: {
+        ...sort,
+        locale,
+      },
+    }) as SpellListSearchParams,
   )
 }

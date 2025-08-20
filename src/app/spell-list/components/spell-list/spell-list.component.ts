@@ -28,13 +28,14 @@ export class SpellListComponent {
   readonly spellsByLevel = computed<SpellsByLevel[]>(() => {
     const spells = this.spells() || []
     const grouped = new Map<string, Spell[]>()
+    const cantripKey = 'Cantrips'
 
     // Group spells by level
     for (const spell of spells) {
       let levelKey: string
 
       if (!spell.level || spell.level === 0 || spell.level === '0') {
-        levelKey = 'Cantrips'
+        levelKey = cantripKey
       } else {
         levelKey = `Level ${spell.level}`
       }
@@ -51,10 +52,10 @@ export class SpellListComponent {
       spells,
     }))
 
-    // Sort levels: Ritual first, then Level 1-9
+    // Sort levels: Cantrip first, then Level 1-9
     result.sort((a, b) => {
-      if (a.level === 'Ritual') return -1
-      if (b.level === 'Ritual') return 1
+      if (a.level === cantripKey) return -1
+      if (b.level === cantripKey) return 1
 
       const aNum = parseInt(a.level.replace('Level ', ''))
       const bNum = parseInt(b.level.replace('Level ', ''))

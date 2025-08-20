@@ -40,6 +40,15 @@ export class SpellListEffects {
     map(() => SpellListActions.fetchSpellList({ useCache: true })),
   ))
 
+  fetchSpellListOnLocaleChange$ = createEffect(() => this.actions$.pipe(
+    ofType(SpellListActions.setLocale),
+    switchMap(() => this.store$.select(SpellListSelectors.selectLocale)
+      .pipe(take(1)),
+    ),
+    distinctUntilChanged(),
+    map(() => SpellListActions.fetchSpellList({ useCache: true })),
+  ))
+
   fetchSpellList$ = createEffect(() => this.actions$.pipe(
     ofType(SpellListActions.fetchSpellList),
     debounceMap((_, __, buffer) => this.store$.pipe(

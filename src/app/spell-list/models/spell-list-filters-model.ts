@@ -1,5 +1,7 @@
 import { FormControl } from '@angular/forms'
 import { CharacterClass } from '@core/models'
+import { Spell } from './spell'
+import { DndListSort } from '../../shared/models'
 
 export enum SpellListFilters {
   SEARCH = 'search',
@@ -14,7 +16,10 @@ export interface SpellListFiltersModel {
 }
 
 export type SpellListFiltersModelDto = SpellListFiltersModel
-export type SpellListSearchParams = Partial<SpellListFiltersModelDto>;
+export type SpellListSearchParams = Partial<{
+  filters: Partial<SpellListFiltersModelDto>,
+  sort: DndListSort<keyof Spell>,
+}>;
 
 export interface SpellListAdditionalFiltersForm {
   level: FormControl<number | null>

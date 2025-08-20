@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core'
 import { catchError, map, Observable, of, shareReplay, throwError } from 'rxjs'
-import { CharacterClass } from '@core/models'
+import { CharacterClass, DndLocales } from '@core/models'
 import { Spell, SpellListFilters, SpellListFiltersModel, SpellListSearchParams } from '../models'
 import SPELL_COLLECTION_JSON from '../constants/spell-collection.json'
+import { DndListSort, PartialRecord } from '../../shared/models'
 
 @Injectable()
 export class SpellService {
@@ -34,6 +35,14 @@ export class SpellService {
     },
   }
 
+  private readonly sortMap: PartialRecord<keyof Spell, (a: Spell, b: Spell, sort: DndListSort<keyof Spell>) => number>
+    = {
+    name: (a, b, sort) => {
+      const locale = sort.locale ?? DndLocales.EN
+      return a.name[locale].localeCompare(b.name[locale], locale, { sensitivity: 'base' })
+    },
+  }
+
   search(params: SpellListSearchParams, useCache = false): Observable<Spell[]> {
     this.spellListCache = useCache && this.spellListCache
       ? this.spellListCache
@@ -45,11 +54,16 @@ export class SpellService {
         shareReplay({ refCount: true }),
       )
 
-    const filterFn = Object.keys(params).some(key => this.filterMap[key as SpellListFilters])
-      ? (item: Spell): boolean => Object.entries(params)
+    const filters = params.filters ?? {}
+    const sort = params.sort
+
+    const filterFn = Object.keys(filters).some(key => this.filterMap[key as SpellListFilters])
+      ? (item: Spell): boolean => Object.entries(filters)
         .filter(([key]) => !!this.filterMap[key as SpellListFilters])
-        .every(([key, params]) => (this.filterMap[key as SpellListFilters] as any)(item, params))
+        .every(([key, searchModel]) => (this.filterMap[key as SpellListFilters] as any)(item, searchModel))
       : null
+
+    const sortFn = sort ? this.sortMap[sort.field] : null
 
     return this.spellListCache.pipe(
       map((res) => {
@@ -57,6 +71,12 @@ export class SpellService {
           return res
         }
         return res.filter(filterFn)
+      }),
+      map((res) => {
+        if (!sortFn) {
+          return res
+        }
+        return res.toSorted((a, b) => sortFn(a, b, sort!))
       }),
     )
   }

@@ -1,6 +1,6 @@
 import { DndLocales } from '@core/models'
 import { Spell, SpellListFiltersModel } from '../../models'
-import { LoadingStatus } from '../../../shared/models'
+import { DndListSort, DndSortDirections, LoadingStatus } from '../../../shared/models'
 
 export interface SpellListState {
   list: Spell[],
@@ -8,6 +8,7 @@ export interface SpellListState {
   selectedSpells: Spell[],
   filterValues: Partial<SpellListFiltersModel>,
   locale: DndLocales
+  sort: DndListSort<keyof Spell>,
 }
 
 export const spellListInitialState: SpellListState = {
@@ -16,4 +17,8 @@ export const spellListInitialState: SpellListState = {
   selectedSpells: [],
   filterValues: {},
   locale: DndLocales.EN,
+  sort: {
+    field: 'name',
+    dir: DndSortDirections.DESC,
+  },
 }
