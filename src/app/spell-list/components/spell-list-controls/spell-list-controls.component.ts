@@ -17,6 +17,7 @@ import { outputToObservable, takeUntilDestroyed } from '@angular/core/rxjs-inter
 import { Button } from 'primeng/button'
 import { DialogService } from 'primeng/dynamicdialog'
 import * as _ from 'lodash-es'
+import { CharacterClass } from '@core/models'
 import { SpellListAdditionalFiltersFormValue, SpellListFilters, SpellListFiltersModel } from '../../models'
 import { SpellListFiltersDialogComponent } from '../spell-list-filters-dialog/spell-list-filters-dialog.component'
 
@@ -48,6 +49,7 @@ export class SpellListControlsComponent {
     search: this.fb.nonNullable.control(''),
     additionalFilters: this.fb.nonNullable.group({
       level: this.fb.control<number | null>(null),
+      class: this.fb.control<CharacterClass | null>(null),
     }),
   })
 
@@ -57,6 +59,7 @@ export class SpellListControlsComponent {
         search: this.filterValues()[SpellListFilters.SEARCH] ?? '',
         additionalFilters: {
           level: this.filterValues()[SpellListFilters.LEVEL] ?? null,
+          class: this.filterValues()[SpellListFilters.CLASS] ?? null,
         },
       })
     })
@@ -113,6 +116,7 @@ export class SpellListControlsComponent {
     ).subscribe((v: SpellListAdditionalFiltersFormValue) => this.updateFilterValues.emit({
       ...this.filterValues(),
       [SpellListFilters.LEVEL]: v.level,
+      [SpellListFilters.CLASS]: v.class,
     }))
   }
 }

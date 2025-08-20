@@ -1,6 +1,14 @@
 <form
   [formGroup]="form()"
 >
+  <h3>Classes</h3>
+
+  <p-select-button
+    [formControl]="form().controls.class"
+    [options]="classOptions"
+    class="spell-list-filters-dialog__level-select"
+  />
+
   <h3>Levels</h3>
 
   <p-select-button

@@ -1,4 +1,4 @@
-import { DndTranslatable } from '@core/models'
+import { CharacterClass, DndTranslatable } from '@core/models'
 
 export interface Spell {
   name: DndTranslatable;
@@ -14,6 +14,7 @@ export interface Spell {
   nic?: unknown;
   ritual?: unknown;
   needHelp?: unknown;
+  class: CharacterClass[];
 }
 
 export interface SpellLocalized {

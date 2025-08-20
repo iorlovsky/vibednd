@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core'
 import { catchError, map, Observable, of, shareReplay, throwError } from 'rxjs'
+import { CharacterClass } from '@core/models'
 import { Spell, SpellListFilters, SpellListFiltersModel, SpellListSearchParams } from '../models'
 import SPELL_COLLECTION_JSON from '../constants/spell-collection.json'
 
@@ -16,6 +17,12 @@ export class SpellService {
         spell.name.en,
         spell.name.ru,
       ].some(source => source?.toLowerCase().includes(searchModel.toLowerCase()))
+    },
+    [SpellListFilters.CLASS]: (spell: Spell, searchModel: CharacterClass | null) => {
+      if (searchModel === null) {
+        return true
+      }
+      return !!spell.class.find(spellClass => spellClass.toLowerCase() === searchModel.toLowerCase())
     },
     [SpellListFilters.LEVEL]: (spell: Spell, searchModel: number | null) => {
       if (searchModel === null) {

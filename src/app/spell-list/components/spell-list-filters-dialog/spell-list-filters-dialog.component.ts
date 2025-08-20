@@ -2,6 +2,8 @@ import { ChangeDetectionStrategy, Component, input, output } from '@angular/core
 import { SelectButton } from 'primeng/selectbutton'
 import { FormGroup, ReactiveFormsModule } from '@angular/forms'
 import { Button } from 'primeng/button'
+import { CharacterClass } from '@core/models'
+import * as _ from 'lodash-es'
 import { DndOption } from '../../../shared/models'
 import { SpellListAdditionalFiltersForm } from '../../models'
 
@@ -21,6 +23,7 @@ export class SpellListFiltersDialogComponent {
 
   readonly clearFilters = output()
 
+  readonly classOptions: DndOption<CharacterClass>[] = this.getClassOptions()
   readonly levelOptions: DndOption<number>[] = this.getLevelOptions()
 
   private getLevelOptions(): DndOption<number>[] {
@@ -29,6 +32,25 @@ export class SpellListFiltersDialogComponent {
       return {
         label,
         value: level,
+      }
+    })
+  }
+
+  private getClassOptions(): DndOption<CharacterClass>[] {
+    return [
+      CharacterClass.DRUID,
+      CharacterClass.RANGER,
+      CharacterClass.CLERIC,
+      CharacterClass.PALADIN,
+      CharacterClass.SORCERER,
+      CharacterClass.WARLOCK,
+      CharacterClass.WIZARD,
+      CharacterClass.ARTIFICER,
+      CharacterClass.BARD,
+    ].map((characterClass) => {
+      return {
+        label: _.capitalize(characterClass),
+        value: characterClass,
       }
     })
   }
