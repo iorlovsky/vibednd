@@ -10,7 +10,7 @@
     @if (spellList().length) {
       <dnd-spell-list
         [spells]="spellList()"
-        [language]="currentLanguage()"
+        [language]="locale()"
         (spellClick)="onAddSpell($event)"
       />
     } @else {
@@ -22,7 +22,7 @@
       <h2>My spells</h2>
 
       <dnd-language-switch
-        [currentLanguage]="currentLanguage()"
+        [currentLanguage]="locale()"
         (languageChange)="onLanguageChange($event)"
       />
     </div>
@@ -30,7 +30,7 @@
     @if (selectedSpells().length) {
       <dnd-spell-list
         [spells]="selectedSpells()"
-        [language]="currentLanguage()"
+        [language]="locale()"
         (spellClick)="onRemoveSpell($event)"
       />
     } @else {

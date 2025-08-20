@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit, signal } from '@angular/core'
+import { ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit } from '@angular/core'
 import { Store } from '@ngrx/store'
 import { DndLocales } from '@core/models'
 import { Spell, SpellListFiltersModel } from '../../models'
@@ -23,7 +23,7 @@ export class SpellListPageComponent implements OnInit, OnDestroy {
   readonly selectedSpells = this.store$.selectSignal(SpellListSelectors.selectSelectedSpells)
   readonly filterValues = this.store$.selectSignal(SpellListSelectors.selectFilterValues)
 
-  readonly currentLanguage = signal<DndLocales>(DndLocales.EN)
+  readonly locale = this.store$.selectSignal(SpellListSelectors.selectLocale)
 
   ngOnInit(): void {
     this.store$.dispatch(SpellListActions.spellListInit())
@@ -42,8 +42,8 @@ export class SpellListPageComponent implements OnInit, OnDestroy {
     this.store$.dispatch(SpellListActions.removeSelectedSpell({ spell }))
   }
 
-  onLanguageChange(language: DndLocales): void {
-    this.currentLanguage.set(language)
+  onLanguageChange(locale: DndLocales): void {
+    this.store$.dispatch(SpellListActions.setLocale({ locale: locale }))
   }
 
   updateFilterValues(filterValues: Partial<SpellListFiltersModel>): void {

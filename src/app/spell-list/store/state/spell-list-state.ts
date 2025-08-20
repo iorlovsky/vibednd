@@ -1,3 +1,4 @@
+import { DndLocales } from '@core/models'
 import { Spell, SpellListFiltersModel } from '../../models'
 import { LoadingStatus } from '../../../shared/models'
 
@@ -6,6 +7,7 @@ export interface SpellListState {
   listLoadingStatus: LoadingStatus,
   selectedSpells: Spell[],
   filterValues: Partial<SpellListFiltersModel>,
+  locale: DndLocales
 }
 
 export const spellListInitialState: SpellListState = {
@@ -13,4 +15,5 @@ export const spellListInitialState: SpellListState = {
   listLoadingStatus: LoadingStatus.NONE,
   selectedSpells: [],
   filterValues: {},
+  locale: DndLocales.EN,
 }

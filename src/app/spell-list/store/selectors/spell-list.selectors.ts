@@ -1,5 +1,5 @@
 import { createFeatureSelector, createSelector, MemoizedSelector } from '@ngrx/store'
-import { StateFeatures } from '@core/models'
+import { DndLocales, StateFeatures } from '@core/models'
 import { SpellsFeatureState } from '../reducers'
 import { SpellListState } from '../state'
 import { Spell, SpellListFiltersModel, SpellListFiltersModelDto, SpellListSearchParams } from '../../models'
@@ -17,6 +17,12 @@ export namespace SpellListSelectors {
     selectSpellsFeature,
     state => state.spellList,
   )
+
+  export const selectLocale: Fn<DndLocales> = createSelector(
+    selectSpellListState,
+    state => state.locale,
+  )
+
 
   export const selectSpellList: Fn<Spell[]> = createSelector(
     selectSpellListState,

@@ -7,6 +7,13 @@ import { LoadingStatus } from '../../../shared/models'
 export const spellListReducer = createReducer(
   spellListInitialState,
   on(
+    SpellListActions.setLocale,
+    (state, { locale }): SpellListState => ({
+      ...state,
+      locale,
+    }),
+  ),
+  on(
     SpellListActions.fetchSpellList,
     (state): SpellListState => ({
       ...state,
