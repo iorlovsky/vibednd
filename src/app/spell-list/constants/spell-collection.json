@@ -474,7 +474,8 @@
     "class": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "price": "50 gp"
   },
   {
     "name": {
@@ -495,7 +496,8 @@
     "source": "PHB",
     "class": [
       "Sorcerer",
-      "Wizard"
+      "Wizard",
+      "Bard"
     ]
   },
   {
@@ -664,7 +666,8 @@
     "source": "PHB",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "10 gp"
   },
   {
     "name": {
@@ -733,7 +736,8 @@
       "Artificer",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "100 gp"
   },
   {
     "name": {
@@ -756,7 +760,8 @@
       "Wizard",
       "Bard",
       "Warlock"
-    ]
+    ],
+    "price": "10 gp"
   },
   {
     "name": {
@@ -1099,7 +1104,8 @@
     "class": [
       "Artificer",
       "Wizard"
-    ]
+    ],
+    "price": "25 gp"
   },
   {
     "name": {
@@ -1193,7 +1199,8 @@
       "Artificer",
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "price": "50 gp"
   },
   {
     "name": {
@@ -1308,6 +1315,8 @@
     "duration": "Concentration, up to 1 minute",
     "source": "PHB",
     "class": [
+      "Bard",
+      "Druid",
       "Artificer",
       "Sorcerer",
       "Wizard"
@@ -1524,7 +1533,8 @@
       "Artificer",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "10 gp"
   },
   {
     "name": {
@@ -1590,7 +1600,8 @@
     "class": [
       "Sorcerer",
       "Wizard",
-      "Warlock"
+      "Warlock",
+      "Bard"
     ]
   },
   {
@@ -1890,7 +1901,8 @@
       "Sorcerer",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "100 gp"
   },
   {
     "name": {
@@ -2082,7 +2094,8 @@
       "Cleric",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "200 gp"
   },
   {
     "name": {
@@ -2197,7 +2210,8 @@
       "Paladin",
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "100 gp"
   },
   {
     "name": {
@@ -2244,7 +2258,8 @@
       "Ranger",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "25 gp"
   },
   {
     "name": {
@@ -2382,7 +2397,8 @@
     "source": "PHB",
     "class": [
       "Sorcerer",
-      "Wizard"
+      "Wizard",
+      "Bard"
     ]
   },
   {
@@ -2797,7 +2813,8 @@
     "source": "PHB",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "5000 + 50 gp"
   },
   {
     "name": {
@@ -2908,7 +2925,8 @@
     "duration": "Concentration, up to 1 minute",
     "source": "PHB",
     "class": [
-      "Wizard"
+      "Wizard",
+      "Bard"
     ]
   },
   {
@@ -2981,7 +2999,8 @@
       "Ranger",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "price": "100 gp"
   },
   {
     "name": {
@@ -3279,7 +3298,8 @@
       "Cleric",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "250 + 200"
   },
   {
     "name": {
@@ -3368,7 +3388,8 @@
       "Cleric",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -3388,7 +3409,8 @@
     "duration": "1 hour",
     "source": "PHB",
     "class": [
-      "Wizard"
+      "Wizard",
+      "Bard"
     ]
   },
   {
@@ -3414,7 +3436,8 @@
       "Wizard",
       "Bard",
       "Warlock"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -3482,7 +3505,8 @@
       "Sorcerer",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "50 gp"
   },
   {
     "name": {
@@ -3595,7 +3619,8 @@
       "Sorcerer",
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -3616,7 +3641,8 @@
     "source": "PHB",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "1500 gp"
   },
   {
     "name": {
@@ -3639,7 +3665,8 @@
       "Cleric",
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "150 gp"
   },
   {
     "name": {
@@ -3682,7 +3709,8 @@
     "source": "PHB",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -3772,7 +3800,8 @@
     "class": [
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "10 gp"
   },
   {
     "name": {
@@ -3793,7 +3822,8 @@
     "source": "PHB",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -3905,7 +3935,8 @@
     "class": [
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "25 gp"
   },
   {
     "name": {
@@ -3953,7 +3984,8 @@
       "Wizard",
       "Bard",
       "Warlock"
-    ]
+    ],
+    "price": "25 gp"
   },
   {
     "name": {
@@ -4067,7 +4099,8 @@
       "Wizard",
       "Bard",
       "Warlock"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -4112,7 +4145,8 @@
     "class": [
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "5 gp"
   },
   {
     "name": {
@@ -4134,7 +4168,8 @@
     "class": [
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "250 gp"
   },
   {
     "name": {
@@ -4159,7 +4194,8 @@
       "Sorcerer",
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "250 gp"
   },
   {
     "name": {
@@ -4180,7 +4216,8 @@
     "source": "PHB",
     "class": [
       "Sorcerer",
-      "Wizard"
+      "Wizard",
+      "Bard"
     ]
   },
   {
@@ -4203,7 +4240,8 @@
     "class": [
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "5 gp"
   },
   {
     "name": {
@@ -4247,7 +4285,8 @@
     "source": "PHB",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "5000 gp"
   },
   {
     "name": {
@@ -4268,7 +4307,8 @@
     "source": "PHB",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -4291,7 +4331,8 @@
       "Cleric",
       "Wizard",
       "Bard"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -4357,7 +4398,8 @@
     "source": "PHB",
     "class": [
       "Druid",
-      "Wizard"
+      "Wizard",
+      "Bard"
     ]
   },
   {
@@ -4379,7 +4421,8 @@
     "source": "PHB",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "1000 + 2000 gp"
   },
   {
     "name": {
@@ -4628,7 +4671,8 @@
       "Cleric",
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "1000 + 100 gp"
   },
   {
     "name": {
@@ -4674,7 +4718,8 @@
     "class": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "price": "5000 gp"
   },
   {
     "name": {
@@ -4696,7 +4741,8 @@
     "class": [
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -4762,7 +4808,8 @@
     "duration": "10 minutes",
     "source": "PHB",
     "class": [
-      "Wizard"
+      "Wizard",
+      "Bard"
     ]
   },
   {
@@ -4785,7 +4832,8 @@
     "class": [
       "Druid",
       "Wizard"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -5264,7 +5312,8 @@
       "Cleric",
       "Paladin",
       "Bard"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -5309,7 +5358,8 @@
     "class": [
       "Cleric",
       "Bard"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -5404,7 +5454,7 @@
     },
     "text": {
       "en": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.  Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.  Approach. The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.  Drop. The target drops whatever it is holding and then ends its turn.  Flee. The target spends its turn moving away from you by the fastest available means.  Grovel. The target falls prone and then ends its turn.  Halt. The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.  At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
-      "ru": "Вы отдаете однословный приказ существу, которое можете видеть в пределах дальности заклинания. Цель должна сделать спасбросок по Мудрости или будет следовать этой команде в свой следующий ход. Заклинание не действует, если целью является нежить, цель не понимает ваш язык или ваш приказ наносит прямой вред цели. Далее описаны несколько приказов и их эффекты. Вы можете отдавать другие приказы. В этом случае МП решает, как ведет себя цель. Если цель не может выполнить ваш приказ, то заклинание заканчивается.Подойди. Цель двигается к вам по кратчайшему пути и останавливается, если оказывается в 5 футах от вас. Брось. Цель роняет то, что было у нее в руках, а затем заканчивает свой ход. Беги. Цель тратит весь свой ход, чтобы как можно быстрее убежать от вас. Ложись. Цель падает на землю и заканчивает свой ход. Стой. Цель не двигается и не совершает действий в этом ходу. Летающее существо продолжает парить, если оно способно на это. Если ему нужно двигаться, чтобы оставаться в воздухе, то оно пролетает минимальное расстояние, необходимое для этого. На более высоких кругах. Если вы произносите заклинание, используя ячейку 2 круга или выше, то можете использовать это заклинание на одну дополнительную цель за каждый круг выше первого. Существа должны находиться в пределах 30 футов друг от друга, когда вы применяете на них заклинание."
+      "ru": "Вы отдаете однословный приказ существу, которое можете видеть в пределах дальности заклинания. Цель должна сделать спасбросок по Мудрости или будет следовать этой команде в свой следующий ход. Заклинание не действует, если целью является нежить, цель не понимает ваш язык или ваш приказ наносит прямой вред цели. Далее описаны несколько приказов и их эффекты. Вы можете отдавать другие приказы. В этом случае МП решает, как ведет себя цель. Если цель не может выполнить ваш приказ, то заклинание заканчивается. Подойди. Цель двигается к вам по кратчайшему пути и останавливается, если оказывается в 5 футах от вас. Брось. Цель роняет то, что было у нее в руках, а затем заканчивает свой ход. Беги. Цель тратит весь свой ход, чтобы как можно быстрее убежать от вас. Ложись. Цель падает на землю и заканчивает свой ход. Стой. Цель не двигается и не совершает действий в этом ходу. Летающее существо продолжает парить, если оно способно на это. Если ему нужно двигаться, чтобы оставаться в воздухе, то оно пролетает минимальное расстояние, необходимое для этого. На более высоких кругах. Если вы произносите заклинание, используя ячейку 2 круга или выше, то можете использовать это заклинание на одну дополнительную цель за каждый круг выше первого. Существа должны находиться в пределах 30 футов друг от друга, когда вы применяете на них заклинание."
     },
     "school": "Enchantment",
     "level": 1,
@@ -5416,7 +5466,8 @@
     "source": "PHB",
     "class": [
       "Cleric",
-      "Paladin"
+      "Paladin",
+      "Bard"
     ]
   },
   {
@@ -5594,7 +5645,8 @@
     "source": "PHB",
     "class": [
       "Cleric"
-    ]
+    ],
+    "price": "25 gp"
   },
   {
     "name": {
@@ -5712,7 +5764,7 @@
   {
     "name": {
       "en": "Mass Healing Word",
-      "ru": "Массовое исцеляющее слово"
+      "ru": "Множественное лечащее слово"
     },
     "text": {
       "en": "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs. At Higher Levels. When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd.",
@@ -5727,7 +5779,8 @@
     "duration": "Instantaneous",
     "source": "PHB",
     "class": [
-      "Cleric"
+      "Cleric",
+      "Bard"
     ]
   },
   {
@@ -5773,7 +5826,8 @@
       "Artificer",
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "price": "300 gp"
   },
   {
     "name": {
@@ -5840,7 +5894,8 @@
     "source": "PHB",
     "class": [
       "Cleric"
-    ]
+    ],
+    "price": "25 gp"
   },
   {
     "name": {
@@ -5967,7 +6022,8 @@
     "source": "PHB",
     "class": [
       "Cleric"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -6139,7 +6195,8 @@
     "source": "PHB",
     "class": [
       "Cleric"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -6182,7 +6239,8 @@
     "class": [
       "Druid",
       "Cleric"
-    ]
+    ],
+    "price": "25000 gp"
   },
   {
     "name": {
@@ -7304,7 +7362,8 @@
     "class": [
       "Druid",
       "Bard"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -7328,7 +7387,8 @@
       "Artificer",
       "Cleric",
       "Bard"
-    ]
+    ],
+    "price": "100 gp"
   },
   {
     "name": {
@@ -7351,7 +7411,8 @@
       "Druid",
       "Cleric",
       "Bard"
-    ]
+    ],
+    "price": "100 gp"
   },
   {
     "name": {
@@ -7484,7 +7545,9 @@
     "class": [
       "Artificer",
       "Cleric",
-      "Paladin"
+      "Paladin",
+      "Ranger",
+      "Bard"
     ]
   },
   {
@@ -7531,7 +7594,8 @@
     "source": "PHB",
     "class": [
       "Cleric"
-    ]
+    ],
+    "price": "50 gp"
   },
   {
     "name": {
@@ -7639,7 +7703,8 @@
     "source": "PHB",
     "class": [
       "Cleric"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -7705,8 +7770,10 @@
     "source": "PHB",
     "class": [
       "Druid",
-      "Cleric"
-    ]
+      "Cleric",
+      "Bard"
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -7834,7 +7901,8 @@
     "source": "PHB",
     "class": [
       "Druid"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
@@ -9086,7 +9154,7 @@
   },
   {
     "name": {
-      "en": "WALL OF WATER",
+      "en": "Wall of Water",
       "ru": "Стена воды"
     },
     "text": {
@@ -9109,7 +9177,7 @@
   },
   {
     "name": {
-      "en": "BOOMING BLADE",
+      "en": "Booming Blade",
       "ru": "Громовой Клинок"
     },
     "text": {
@@ -9133,7 +9201,7 @@
   },
   {
     "name": {
-      "en": "GREEN-FLAME BLADE",
+      "en": "Green-Flame Blade",
       "ru": "Клинок Зеленого Пламени"
     },
     "text": {
@@ -9157,7 +9225,7 @@
   },
   {
     "name": {
-      "en": "LIGHTNING LURE",
+      "en": "Lightning Lure",
       "ru": "Лассо Молнии"
     },
     "text": {
@@ -9181,7 +9249,7 @@
   },
   {
     "name": {
-      "en": "SWORD BURST",
+      "en": "Sword Burst",
       "ru": "Вспышка Мечей"
     },
     "text": {
@@ -9205,7 +9273,7 @@
   },
   {
     "name": {
-      "en": "AGANAEZAR'S SCORCHER",
+      "en": "Aganazzar's Scorcher",
       "ru": "Пекло Аганаззара"
     },
     "text": {
@@ -9227,7 +9295,7 @@
   },
   {
     "name": {
-      "en": "CATNAP",
+      "en": "Catnap",
       "ru": "Дрёма"
     },
     "text": {
@@ -9251,7 +9319,7 @@
   },
   {
     "name": {
-      "en": "CAUSE FEAR",
+      "en": "Cause Fear",
       "ru": "Вызов страха"
     },
     "text": {
@@ -9273,7 +9341,7 @@
   },
   {
     "name": {
-      "en": "CEREMONY",
+      "en": "Ceremony",
       "ru": "Церемония"
     },
     "text": {
@@ -9291,11 +9359,12 @@
     "class": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "price": "25 gp"
   },
   {
     "name": {
-      "en": "CHAOS BOLT",
+      "en": "Chaos Bolt",
       "ru": "Снаряд Хаоса"
     },
     "text": {
@@ -9316,7 +9385,7 @@
   },
   {
     "name": {
-      "en": "CHARM MONSTER",
+      "en": "Charm Monster",
       "ru": "Очарование монстра"
     },
     "text": {
@@ -9341,7 +9410,7 @@
   },
   {
     "name": {
-      "en": "CREATE HOMUNCULUS",
+      "en": "Create Homunculus",
       "ru": "Сотворение гомункула"
     },
     "text": {
@@ -9358,11 +9427,12 @@
     "source": "XGTE",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "1000 gp"
   },
   {
     "name": {
-      "en": "CROWN OF STARS",
+      "en": "Crown of Stars",
       "ru": "Корона звёзд"
     },
     "text": {
@@ -9384,7 +9454,7 @@
   },
   {
     "name": {
-      "en": "DANSE MACABRE",
+      "en": "Dance Macabre",
       "ru": "Пляска смерти"
     },
     "text": {
@@ -9406,7 +9476,7 @@
   },
   {
     "name": {
-      "en": "DAWN",
+      "en": "Dawn",
       "ru": "Рассвет"
     },
     "text": {
@@ -9424,11 +9494,12 @@
     "class": [
       "Cleric",
       "Wizard"
-    ]
+    ],
+    "price": "100 gp"
   },
   {
     "name": {
-      "en": "DRAGON'S BREATH",
+      "en": "Dragon's Breath",
       "ru": "Дыхание дракона"
     },
     "text": {
@@ -9450,7 +9521,7 @@
   },
   {
     "name": {
-      "en": "DRUID GROVE",
+      "en": "Druid Grove",
       "ru": "Роща друида"
     },
     "text": {
@@ -9471,7 +9542,7 @@
   },
   {
     "name": {
-      "en": "ENEMIES ABOUND",
+      "en": "Enemies Abound",
       "ru": "Изобилие врагов"
     },
     "text": {
@@ -9495,7 +9566,7 @@
   },
   {
     "name": {
-      "en": "ENERVATION",
+      "en": "Enervation",
       "ru": "Обессиливание"
     },
     "text": {
@@ -9518,7 +9589,7 @@
   },
   {
     "name": {
-      "en": "FAR STEP",
+      "en": "Far Step",
       "ru": "Далекий шаг"
     },
     "text": {
@@ -9541,7 +9612,7 @@
   },
   {
     "name": {
-      "en": "FIND GREATER STEED",
+      "en": "Find Greater Steed",
       "ru": "Поиск высшего скакуна"
     },
     "text": {
@@ -9562,7 +9633,7 @@
   },
   {
     "name": {
-      "en": "GUARDIAN OF NATURE",
+      "en": "Guardian of Nature",
       "ru": "Страж природы"
     },
     "text": {
@@ -9583,7 +9654,7 @@
   },
   {
     "name": {
-      "en": "HEALING SPIRIT",
+      "en": "Healing Spirit",
       "ru": "Исцеляющий дух"
     },
     "text": {
@@ -9605,7 +9676,7 @@
   },
   {
     "name": {
-      "en": "HOLY WEAPON",
+      "en": "Holy Weapon",
       "ru": "Священное оружие"
     },
     "text": {
@@ -9627,7 +9698,7 @@
   },
   {
     "name": {
-      "en": "ILLUSORY DRAGON",
+      "en": "Illusory Dragon",
       "ru": "Иллюзорный дракон"
     },
     "text": {
@@ -9648,7 +9719,7 @@
   },
   {
     "name": {
-      "en": "INFERNAL CALLING",
+      "en": "Infernal Calling",
       "ru": "Инфернальный зов"
     },
     "text": {
@@ -9666,11 +9737,12 @@
     "class": [
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "999 gp"
   },
   {
     "name": {
-      "en": "INFESTATION",
+      "en": "Infestation",
       "ru": "Нашествие"
     },
     "text": {
@@ -9694,7 +9766,7 @@
   },
   {
     "name": {
-      "en": "INVULNERABILITY",
+      "en": "Invulnerability",
       "ru": "Неуязвимость"
     },
     "text": {
@@ -9711,11 +9783,12 @@
     "source": "XGTE",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
-      "en": "LIFE TRANSFERENCE",
+      "en": "Life Transference",
       "ru": "Передача жизни"
     },
     "text": {
@@ -9737,7 +9810,7 @@
   },
   {
     "name": {
-      "en": "MADDENING DARKNESS",
+      "en": "Maddening Darkness",
       "ru": "Одуряющая тьма"
     },
     "text": {
@@ -9759,7 +9832,7 @@
   },
   {
     "name": {
-      "en": "MASS POLYMORPH",
+      "en": "Mass Polymorph",
       "ru": "Множественное превращение"
     },
     "text": {
@@ -9776,12 +9849,13 @@
     "source": "XGTE",
     "class": [
       "Sorcerer",
-      "Wizard"
+      "Wizard",
+      "Bard"
     ]
   },
   {
     "name": {
-      "en": "MENTAL PRISON",
+      "en": "Mental Prison",
       "ru": "Ментальная тюрьма"
     },
     "text": {
@@ -9804,7 +9878,7 @@
   },
   {
     "name": {
-      "en": "MIGHTY FORTRESS",
+      "en": "Mighty Fortress",
       "ru": "Могучая крепость"
     },
     "text": {
@@ -9821,11 +9895,12 @@
     "source": "XGTE",
     "class": [
       "Wizard"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
-      "en": "MIND SPIKE",
+      "en": "Mind Spike",
       "ru": "Пронзание разума"
     },
     "text": {
@@ -9848,7 +9923,7 @@
   },
   {
     "name": {
-      "en": "NEGATIVE ENERGY FLOOD",
+      "en": "Negative Energy Flood",
       "ru": "Поток негативной энергии"
     },
     "text": {
@@ -9870,7 +9945,7 @@
   },
   {
     "name": {
-      "en": "POWER WORD PAIN",
+      "en": "Power Word Pain",
       "ru": "Слово силы: боль"
     },
     "text": {
@@ -9893,7 +9968,7 @@
   },
   {
     "name": {
-      "en": "PRIMAL SAVAGERY",
+      "en": "Primal Savagery",
       "ru": "Первобытная дикость"
     },
     "text": {
@@ -9914,7 +9989,7 @@
   },
   {
     "name": {
-      "en": "PSYCHIC SCREAM",
+      "en": "Psychic Scream",
       "ru": "Психический крик"
     },
     "text": {
@@ -9938,7 +10013,7 @@
   },
   {
     "name": {
-      "en": "SCATTER",
+      "en": "Scatter",
       "ru": "Раскидывание"
     },
     "text": {
@@ -9961,7 +10036,7 @@
   },
   {
     "name": {
-      "en": "SHADOW BLADE",
+      "en": "Shadow Blade",
       "ru": "Теневой клинок"
     },
     "text": {
@@ -9984,7 +10059,7 @@
   },
   {
     "name": {
-      "en": "SHADOW OF MOIL",
+      "en": "Shadow Of Moil",
       "ru": "Облачение тени"
     },
     "text": {
@@ -10001,11 +10076,12 @@
     "source": "XGTE",
     "class": [
       "Warlock"
-    ]
+    ],
+    "price": "150 gp"
   },
   {
     "name": {
-      "en": "SICKENING RADIANCE",
+      "en": "Sickening Radiance",
       "ru": "Болезненное сияние"
     },
     "text": {
@@ -10028,7 +10104,7 @@
   },
   {
     "name": {
-      "en": "SKILL EMPOWERMENT",
+      "en": "Skill Empowerment",
       "ru": "Усиление навыка"
     },
     "text": {
@@ -10052,7 +10128,7 @@
   },
   {
     "name": {
-      "en": "SNARE",
+      "en": "Snare",
       "ru": "Силок"
     },
     "text": {
@@ -10076,7 +10152,7 @@
   },
   {
     "name": {
-      "en": "SOUL CAGE",
+      "en": "Soul Cage",
       "ru": "Клетка душ"
     },
     "text": {
@@ -10094,11 +10170,12 @@
     "class": [
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "100 gp"
   },
   {
     "name": {
-      "en": "STEEL WIND STRIKE",
+      "en": "Steel Wind Strike",
       "ru": "Удар стального ветра"
     },
     "text": {
@@ -10120,7 +10197,7 @@
   },
   {
     "name": {
-      "en": "SUMMON GREATER DEMON",
+      "en": "Summon Greater Demon",
       "ru": "Призыв высшего демона"
     },
     "text": {
@@ -10142,7 +10219,7 @@
   },
   {
     "name": {
-      "en": "SUMMON LESSER DEMONS",
+      "en": "Summon Lesser Demons",
       "ru": "Призыв низших демонов"
     },
     "text": {
@@ -10164,7 +10241,7 @@
   },
   {
     "name": {
-      "en": "SYNAPTIC STATIC",
+      "en": "Synaptic Static",
       "ru": "Синоптический разряд"
     },
     "text": {
@@ -10187,7 +10264,7 @@
   },
   {
     "name": {
-      "en": "TEMPLE OF THE GODS",
+      "en": "Temple Of The Gods",
       "ru": "Храм богов"
     },
     "text": {
@@ -10204,11 +10281,12 @@
     "source": "XGTE",
     "class": [
       "Cleric"
-    ]
+    ],
+    "price": "5 gp"
   },
   {
     "name": {
-      "en": "TENSER'S TRANSFORMATION",
+      "en": "Tenser'S Transformation",
       "ru": "Трансформация Тензера"
     },
     "text": {
@@ -10229,7 +10307,7 @@
   },
   {
     "name": {
-      "en": "THUNDER STEP",
+      "en": "Thunder Step",
       "ru": "Громовой шаг"
     },
     "text": {
@@ -10252,7 +10330,7 @@
   },
   {
     "name": {
-      "en": "TINY SERVANT",
+      "en": "Tiny Servant",
       "ru": "Крошечный слуга"
     },
     "text": {
@@ -10274,7 +10352,7 @@
   },
   {
     "name": {
-      "en": "TOLL THE DEAD",
+      "en": "Toll The Dead",
       "ru": "Погребальный звон"
     },
     "text": {
@@ -10297,7 +10375,7 @@
   },
   {
     "name": {
-      "en": "WALL OF LIGHT",
+      "en": "Wall Of Light",
       "ru": "Стена света"
     },
     "text": {
@@ -10361,7 +10439,7 @@
   },
   {
     "name": {
-      "en": "WRATH OF NATURE",
+      "en": "Wrath Of Nature",
       "ru": "Гнев природы"
     },
     "text": {
@@ -10382,7 +10460,7 @@
   },
   {
     "name": {
-      "en": "ZEPHYR STRIKE",
+      "en": "Zephyr Strike",
       "ru": "Удар Зефира"
     },
     "text": {
@@ -10403,7 +10481,7 @@
   },
   {
     "name": {
-      "en": "BLADE OF DISASTER",
+      "en": "Blade Of Disaster",
       "ru": "Клинок разрушения"
     },
     "text": {
@@ -10426,7 +10504,7 @@
   },
   {
     "name": {
-      "en": "BOOMING BLADE",
+      "en": "Booming Blade",
       "ru": "Громовой клинок"
     },
     "text": {
@@ -10450,7 +10528,7 @@
   },
   {
     "name": {
-      "en": "DREAM OF THE BLUE VEIL",
+      "en": "Dream Of The Blue Veil",
       "ru": "Сон синей вуали"
     },
     "text": {
@@ -10474,7 +10552,7 @@
   },
   {
     "name": {
-      "en": "INTELLECT FORTRESS",
+      "en": "Intellect Fortress",
       "ru": "Крепость интеллекта"
     },
     "text": {
@@ -10498,7 +10576,7 @@
   },
   {
     "name": {
-      "en": "GREEN-FLAME BLADE",
+      "en": "Green-Flame Blade",
       "ru": "Клинок зелёного пламени"
     },
     "text": {
@@ -10522,7 +10600,7 @@
   },
   {
     "name": {
-      "en": "LIGHTNING LURE",
+      "en": "Lightning Lure",
       "ru": "Лассо молнии"
     },
     "text": {
@@ -10546,7 +10624,7 @@
   },
   {
     "name": {
-      "en": "MIND SLIVER",
+      "en": "Mind Sliver",
       "ru": "Расщепление разума"
     },
     "text": {
@@ -10569,7 +10647,7 @@
   },
   {
     "name": {
-      "en": "SUMMON ABERRATION",
+      "en": "Summon Aberration",
       "ru": "Призыв духа аберрации"
     },
     "text": {
@@ -10587,11 +10665,12 @@
     "class": [
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "400 gp"
   },
   {
     "name": {
-      "en": "SUMMON BEAST",
+      "en": "Summon Beast",
       "ru": "Призыв духа зверя"
     },
     "text": {
@@ -10609,11 +10688,12 @@
     "class": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "price": "200 gp"
   },
   {
     "name": {
-      "en": "SUMMON CELESTIAL",
+      "en": "Summon Celestial",
       "ru": "Призыв духа небожителя"
     },
     "text": {
@@ -10631,11 +10711,12 @@
     "class": [
       "Cleric",
       "Paladin"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
-      "en": "SUMMON CONSTRUCT",
+      "en": "Summon Construct",
       "ru": "Призыв духа конструкта"
     },
     "text": {
@@ -10653,11 +10734,12 @@
     "class": [
       "Artificer",
       "Wizard"
-    ]
+    ],
+    "price": "400 gp"
   },
   {
     "name": {
-      "en": "SUMMON ELEMENTAL",
+      "en": "Summon Elemental",
       "ru": "Призыв духа стихии"
     },
     "text": {
@@ -10675,11 +10757,12 @@
     "class": [
       "Druid",
       "Ranger"
-    ]
+    ],
+    "price": "400 gp"
   },
   {
     "name": {
-      "en": "SUMMON FEY",
+      "en": "Summon Fey",
       "ru": "Призыв духа феи"
     },
     "text": {
@@ -10699,11 +10782,12 @@
       "Ranger",
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "300 gp"
   },
   {
     "name": {
-      "en": "SUMMON FIEND",
+      "en": "Summon Fiend",
       "ru": "Призыв духа исчадия"
     },
     "text": {
@@ -10721,11 +10805,12 @@
     "class": [
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "600 gp"
   },
   {
     "name": {
-      "en": "SUMMON SHADOWSPAWN",
+      "en": "Summon Shadowspawn",
       "ru": "Призыв духа тени"
     },
     "text": {
@@ -10743,11 +10828,12 @@
     "class": [
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "300 gp"
   },
   {
     "name": {
-      "en": "SUMMON UNDEAD",
+      "en": "Summon Undead",
       "ru": "Призыв духа нежити"
     },
     "text": {
@@ -10765,11 +10851,12 @@
     "class": [
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "300 gp"
   },
   {
     "name": {
-      "en": "SWORD BURST",
+      "en": "Sword Burst",
       "ru": "Вспышка мечей"
     },
     "text": {
@@ -10793,7 +10880,7 @@
   },
   {
     "name": {
-      "en": "TASHA'S CAUSTIC BREW",
+      "en": "Tasha's Caustic Brew",
       "ru": "Едкое варево Таши"
     },
     "text": {
@@ -10816,7 +10903,7 @@
   },
   {
     "name": {
-      "en": "TASHA'S MIND WHIP",
+      "en": "Tasha's Mind Whip",
       "ru": "Психическая плеть Таши"
     },
     "text": {
@@ -10838,7 +10925,7 @@
   },
   {
     "name": {
-      "en": "TASHA'S OTHERWORLDLY GUISE",
+      "en": "Tasha's Otherworldly Guise",
       "ru": "Потусторонний облик Таши"
     },
     "text": {
@@ -10857,11 +10944,12 @@
       "Sorcerer",
       "Wizard",
       "Warlock"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
-      "en": "SPIRIT SHROUD",
+      "en": "Spirit Shroud",
       "ru": "Покров духа"
     },
     "text": {
@@ -10928,7 +11016,8 @@
       "Wizard",
       "Bard",
       "Warlock"
-    ]
+    ],
+    "price": "25 gp"
   },
   {
     "name": {
@@ -11045,7 +11134,8 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -11067,7 +11157,8 @@
     "class": [
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "price": "500 gp"
   },
   {
     "name": {
@@ -11159,6 +11250,7 @@
       "Druid",
       "Sorcerer",
       "Wizard"
-    ]
+    ],
+    "price": "500 gp"
   }
 ]
