@@ -3,13 +3,14 @@ import { Menu } from 'primeng/menu'
 import { ThemeMode } from '@core/models'
 import { MenuItem } from 'primeng/api'
 import { Button } from 'primeng/button'
+import { NgOptimizedImage } from '@angular/common'
 
 @Component({
   selector: 'dnd-app-header',
   templateUrl: './app-header.component.html',
   styleUrl: './app-header.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  imports: [Menu, Button],
+  imports: [Menu, Button, NgOptimizedImage],
 })
 export class AppHeaderComponent {
   readonly themeMode = input.required<ThemeMode>()
