@@ -16,7 +16,7 @@ body {
 :root[color-scheme="light"] {
   color-scheme: light;
 
-  --dnd-bg-color: var(--p-zinc-50);
+  --dnd-color-background-general: rgba(245, 242, 240, 1);
 
   --dnd-card-border-color: var(--p-amber-700);
   --dnd-card-background-color: var(--dnd-bg-color);
@@ -27,12 +27,12 @@ body {
 :root[color-scheme="dark"] {
   color-scheme: dark;
 
-  --dnd-bg-color: var(--p-zinc-700);
+  --dnd-color-background-general: var(--p-zinc-700);
   --dnd-card-border-color: var(--p-emerald-200);
   --dnd-card-text-secondary-color: var(--p-zinc-400);
   --dnd-card-shadow-color-hover: rgba(0, 0, 0, 0.6);
 }
 
-:root {
-  background-color: var(--dnd-bg-color);
+body {
+  background-color: var(--dnd-color-background-general);
 }
