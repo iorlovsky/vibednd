@@ -16,21 +16,38 @@ body {
 :root[color-scheme="light"] {
   color-scheme: light;
 
+  // Background colors
   --dnd-color-background-general: rgba(245, 242, 240, 1);
+
+  // Text colors
+  --dnd-color-text-primary: #A18167;
 
   --dnd-card-border-color: var(--p-amber-700);
   --dnd-card-background-color: var(--dnd-bg-color);
   --dnd-card-text-secondary-color: var(--p-zinc-400);
   --dnd-card-shadow-color-hover: rgba(0, 0, 0, 0.2);
+
+  .dnd-only-dark {
+    display: none;
+  }
 }
 
 :root[color-scheme="dark"] {
   color-scheme: dark;
 
-  --dnd-color-background-general: var(--p-zinc-700);
+  // Background colors
+  --dnd-color-background-general: #000;
+
+  // Text colors
+  --dnd-color-text-primary: #C28F2C;
+
   --dnd-card-border-color: var(--p-emerald-200);
   --dnd-card-text-secondary-color: var(--p-zinc-400);
   --dnd-card-shadow-color-hover: rgba(0, 0, 0, 0.6);
+
+  .dnd-only-light {
+    display: none;
+  }
 }
 
 body {
