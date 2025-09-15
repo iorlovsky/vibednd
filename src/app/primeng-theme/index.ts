@@ -3,10 +3,12 @@ import Aura from '@primeng/themes/aura'
 import { Preset } from '@primeuix/themes/types'
 import { AuraBaseDesignTokens } from '@primeng/themes/aura/base'
 import { primengThemeButton } from './button'
+import { primengThemeMenu } from './menu'
 
 export const dndPrimeNgTheme = definePreset(Aura, {
   semantic: {},
   components: {
     button: primengThemeButton,
+    menu: primengThemeMenu,
   },
 } satisfies Preset<AuraBaseDesignTokens>)
