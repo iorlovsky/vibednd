@@ -19,15 +19,15 @@
     <div>
       <p-menu
         #menu
-        [model]="themeMenuItems" [popup]="true"
-      >
-
-      </p-menu>
+        [model]="themeMenuItems"
+        popup
+      />
       <p-button
         (click)="menu.toggle($event)"
-        icon="pi pi-sun"
+        icon="pi {{ isDarkTheme() ? 'pi-moon' : 'pi-sun' }}"
         severity="secondary"
         text
+        size="large"
         type="button"
       />
     </div>

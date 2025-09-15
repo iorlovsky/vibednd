@@ -1,16 +1,20 @@
-import { DOCUMENT, inject, Injectable, Signal, signal, WritableSignal } from '@angular/core'
+import { computed, DOCUMENT, inject, Injectable, Signal, signal, WritableSignal } from '@angular/core'
 import { ThemeMode } from '@core/models'
 
 @Injectable({ providedIn: 'root' })
 export class ThemeService {
   private readonly document = inject(DOCUMENT)
 
-  readonly theme: Signal<ThemeMode>
   private readonly _theme: WritableSignal<ThemeMode> = signal('system')
 
-  constructor() {
-    this.theme = this._theme.asReadonly()
-  }
+  readonly theme: Signal<ThemeMode> = this._theme.asReadonly()
+
+  readonly isDark: Signal<boolean> = computed(() => {
+    if (this._theme() === 'system') {
+      return this.getSystemThemeMode() === 'dark'
+    }
+    return this._theme() === 'dark'
+  })
 
   setTheme(theme: ThemeMode): void {
     this._theme.set(theme)
