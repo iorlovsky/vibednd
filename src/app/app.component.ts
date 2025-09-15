@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, DOCUMENT, inject, signal } from '@angular/core'
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core'
 import { AppHeaderComponent } from '@core/components'
 import { RouterOutlet } from '@angular/router'
 import { ThemeMode } from '@core/models'
 import { Toast } from 'primeng/toast'
+import { ThemeService } from '@core/services'
 
 @Component({
   selector: 'dnd-root',
@@ -12,25 +13,15 @@ import { Toast } from 'primeng/toast'
   imports: [AppHeaderComponent, RouterOutlet, Toast],
 })
 export class AppComponent {
-  readonly document = inject(DOCUMENT)
+  private readonly themeService = inject(ThemeService)
 
-  readonly themeMode = signal<ThemeMode>('system')
+  readonly theme = this.themeService.theme
 
   constructor() {
-    this.document.documentElement.setAttribute('color-scheme', this.getSystemThemeMode())
+    this.themeService.setThemeFromSystem()
   }
 
-  onThemeChange(mode: ThemeMode) {
-    this.themeMode.set(mode)
-
-    if (mode === 'system') {
-      this.document.documentElement.setAttribute('color-scheme', this.getSystemThemeMode())
-    } else {
-      this.document.documentElement.setAttribute('color-scheme', mode)
-    }
-  }
-
-  private getSystemThemeMode(): ThemeMode {
-    return window?.matchMedia?.('(prefers-color-scheme:dark)')?.matches ? 'dark' : 'light'
+  onThemeChange(mode: ThemeMode): void {
+    this.themeService.setTheme(mode)
   }
 }
