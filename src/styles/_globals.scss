@@ -18,6 +18,8 @@ body {
 
   // Background colors
   --dnd-color-background-general: rgba(245, 242, 240, 1);
+  --dnd-color-background-backdrop: rgba(219, 204, 191, 0.5);
+  --dnd-color-background-backdrop-active: rgba(219, 204, 191, 0.8);
 
   // Text colors
   --dnd-color-text-primary: #A18167;
@@ -37,6 +39,8 @@ body {
 
   // Background colors
   --dnd-color-background-general: #000;
+  --dnd-color-background-backdrop: rgba(42, 42, 42, 0.5);
+  --dnd-color-background-backdrop-active: rgba(42, 42, 42, 0.8);
 
   // Text colors
   --dnd-color-text-primary: #C28F2C;
