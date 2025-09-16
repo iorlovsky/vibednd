@@ -18,6 +18,8 @@ import { Button } from 'primeng/button'
 import { DialogService } from 'primeng/dynamicdialog'
 import * as _ from 'lodash-es'
 import { CharacterClass } from '@core/models'
+import { InputGroup } from 'primeng/inputgroup'
+import { InputGroupAddon } from 'primeng/inputgroupaddon'
 import { SpellListAdditionalFiltersFormValue, SpellListFilters, SpellListFiltersModel } from '../../models'
 import { SpellListFiltersDialogComponent } from '../spell-list-filters-dialog/spell-list-filters-dialog.component'
 
@@ -28,6 +30,8 @@ import { SpellListFiltersDialogComponent } from '../spell-list-filters-dialog/sp
     InputText,
     ReactiveFormsModule,
     Button,
+    InputGroup,
+    InputGroupAddon,
   ],
   templateUrl: './spell-list-controls.component.html',
   styleUrl: './spell-list-controls.component.scss',

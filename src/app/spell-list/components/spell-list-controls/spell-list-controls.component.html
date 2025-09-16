@@ -11,26 +11,32 @@
     (onClick)="openFiltersDialog()"
   />
 
-  <p-floatlabel
-    variant="in"
-    class="spell-list-controls__search-wrapper"
-  >
-    <input
-      [formControl]="filtersForm.controls.search"
-      pInputText
-      fluid
-      variant="filled"
-      pSize="small"
-      id="spell-list-filter-search"
-    />
-    <label for="spell-list-filter-search">Search</label>
-  </p-floatlabel>
+  <p-inputgroup>
+    <p-floatlabel
+      variant="on"
+      class="spell-list-controls__search-wrapper"
+    >
+      <input
+        [formControl]="filtersForm.controls.search"
+        pInputText
+        fluid
+        variant="filled"
+        pSize="large"
+        id="spell-list-filter-search"
+        class="spell-list-controls__search"
+      />
+      <label for="spell-list-filter-search">Search</label>
+    </p-floatlabel>
 
-  <p-button
-    icon="pi pi-times"
-    aria-label="Clear search"
-    severity="secondary"
-    outlined
-    (onClick)="clearSearch()"
-  />
+    <p-inputgroup-addon>
+      <p-button
+        icon="pi pi-times"
+        aria-label="Clear search"
+        severity="secondary"
+        text
+        size="large"
+        (onClick)="clearSearch()"
+      />
+    </p-inputgroup-addon>
+  </p-inputgroup>
 </form>

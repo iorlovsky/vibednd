@@ -16,6 +16,10 @@ body {
 :root[color-scheme="light"] {
   color-scheme: light;
 
+  // Base colors
+  --dnd-color-primary: #A18167;
+  //--dnd-color-primary-hover: rgba(219, 204, 191, 1);
+
   // Background colors
   --dnd-color-background-general: rgba(245, 242, 240, 1);
   --dnd-color-background-general-subtle: rgba(255, 255, 255, 1);
@@ -23,7 +27,7 @@ body {
   --dnd-color-background-backdrop-active: rgba(219, 204, 191, 0.8);
 
   // Text colors
-  --dnd-color-text-primary: #A18167;
+  --dnd-color-text-primary: var(--dnd-color-primary);
   --dnd-color-text-secondary: #fff;
   --dnd-color-text-additional: #000;
 
@@ -40,6 +44,10 @@ body {
 :root[color-scheme="dark"] {
   color-scheme: dark;
 
+  // Base colors
+  --dnd-color-primary: #C28F2C;
+  //--dnd-color-primary-hover: rgba(194, 143, 44, 0.5);
+
   // Background colors
   --dnd-color-background-general: #000;
   --dnd-color-background-general-subtle: rgba(30, 30, 30, 1);
@@ -47,7 +55,7 @@ body {
   --dnd-color-background-backdrop-active: rgba(42, 42, 42, 0.8);
 
   // Text colors
-  --dnd-color-text-primary: #C28F2C;
+  --dnd-color-text-primary: var(--dnd-color-primary);
   --dnd-color-text-secondary: #000;
   --dnd-color-text-additional: rgba(237, 237, 237, 1);
 
