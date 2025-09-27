@@ -17,3 +17,20 @@
     @content;
   }
 }
+
+@mixin font-pixel($size: null, $weight: null, $line-height: null, $spacing: null) {
+  font-family: "Pixel", system-ui;
+
+  @if $size != null {
+    font-size: $size + px;
+  }
+  @if $line-height != null {
+    line-height: $line-height + px;
+  }
+  @if $weight != null {
+    font-weight: $weight;
+  }
+  @if $spacing != null {
+    letter-spacing: $spacing + px;
+  }
+}
