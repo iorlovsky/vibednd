@@ -3,8 +3,13 @@
     [multiple]="true"
   >
     @for (levelGroup of spellsByLevel(); track levelGroup.level) {
-      <p-accordion-panel [value]="levelGroup.level">
-        <p-accordion-header>
+      <p-accordion-panel
+        [value]="levelGroup.level"
+        class="spell-list-accordion__panel"
+      >
+        <p-accordion-header
+          class="spell-list-accordion__panel-header"
+        >
           <span class="spell-list__level-title">
             {{ levelGroup.level }} ({{ levelGroup.spells.length }})
           </span>

@@ -18,6 +18,7 @@ body {
 
   // Base colors
   --dnd-color-primary: #A18167;
+  --dnd-color-primary-hover: rgb(148, 112, 82);
 
   // Background colors
   --dnd-color-background-general: rgba(245, 242, 240, 1);
@@ -64,6 +65,11 @@ body {
   .dnd-only-light {
     display: none;
   }
+}
+
+:root {
+  --dnd-radius-small: 8px;
+  --dnd-radius-medium: 16px;
 }
 
 body {
