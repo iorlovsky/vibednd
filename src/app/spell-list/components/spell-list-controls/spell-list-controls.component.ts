@@ -20,6 +20,7 @@ import * as _ from 'lodash-es'
 import { CharacterClass } from '@core/models'
 import { InputGroup } from 'primeng/inputgroup'
 import { InputGroupAddon } from 'primeng/inputgroupaddon'
+import { ButtonDesignTokens } from '@primeng/themes/aura/button'
 import { SpellListAdditionalFiltersFormValue, SpellListFilters, SpellListFiltersModel } from '../../models'
 import { SpellListFiltersDialogComponent } from '../spell-list-filters-dialog/spell-list-filters-dialog.component'
 
@@ -56,6 +57,14 @@ export class SpellListControlsComponent {
       class: this.fb.control<CharacterClass | null>(null),
     }),
   })
+
+  readonly clearSearchBtnTheme: ButtonDesignTokens = {
+    root: {
+      focusRing: {
+        offset: '-2px',
+      },
+    },
+  }
 
   constructor() {
     effect(() => {

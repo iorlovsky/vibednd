@@ -8,6 +8,7 @@ import { primengThemeSemantic } from './semantic'
 import { primengThemeInputText } from './input-text'
 import { primengThemeFloatLabel } from './float-label'
 import { primengThemeInputGroup } from './input-group'
+import { primengThemeAccordion } from './accordion'
 
 export const dndPrimeNgTheme = definePreset(Aura, {
   semantic: primengThemeSemantic,
@@ -17,5 +18,6 @@ export const dndPrimeNgTheme = definePreset(Aura, {
     inputgroup: primengThemeInputGroup,
     inputtext: primengThemeInputText,
     floatlabel: primengThemeFloatLabel,
+    accordion: primengThemeAccordion,
   },
 } satisfies Preset<AuraBaseDesignTokens>)
